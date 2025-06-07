@@ -1,0 +1,554 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+    <!-- Projects Hero -->
+    <section class="section projects-hero" style="padding: 45px 0 60px;">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 class="page-title" style="margin-bottom: 15px;">My <span class="highlight">Projects</span></h1>
+                <p class="page-subtitle" style="margin-bottom: 2px;">Real-world applications of data science and AI</p>
+                <div class="divider" style="margin: 0 auto; width: 80px; height: 3px; background: var(--primary-color);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-section" style="padding-top: 1rem;">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- MotherWell Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/motherwell.png') }}" alt="MotherWell">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/MotherWell" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">MotherWell</h2>
+                        <p class="project-description">A comprehensive maternal health monitoring system that predicts potential pregnancy complications using machine learning models.</p>
+                        
+                        <div class="project-tech">
+    <h4 class="tech-title">Technologies Used:</h4>
+    <div class="tech-tags">
+        <span class="tech-tag">
+            <i class="fab fa-python"></i>
+            Python
+        </span>
+        <span class="tech-tag">
+            <i class="fas fa-brain"></i>
+            Machine Learning
+        </span>
+        <span class="tech-tag">
+            <i class="fas fa-flask"></i>
+            Flask
+        </span>
+        <span class="tech-tag">
+            <i class="fas fa-chart-line"></i>
+            Data Analysis
+        </span>
+        <span class="tech-tag">
+            <img src="{{ url_for('static', filename='images/flu.jpg') }}" alt="Flutter" style="height: 17px; vertical-align: middle; margin-right: 4.5px;">
+            Flutter
+        </span>
+    </div>
+</div>
+
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Early detection of high-risk pregnancies
+                                </li>
+                                <li class="impact-item">
+                                    Personalized health recommendations for expecting mothers
+                                </li>
+                                <li class="impact-item">
+                                    Reduced maternal mortality through predictive analytics
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/MotherWell" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DermaBOT Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/DermaBOT.png') }}" alt="DermaBOT">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/DermaBOT" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">DermaBOT</h2>
+                        <p class="project-description">An AI-powered dermatology assistant that helps identify skin conditions from images using deep learning.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-robot"></i>
+                                    Deep Learning
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fab fa-python"></i>
+                                    TensorFlow
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-camera"></i>
+                                    Image Processing
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Streamlit
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Automated preliminary skin condition diagnosis
+                                </li>
+                                <li class="impact-item">
+                                    Accessible dermatology assessment for remote areas
+                                </li>
+                                <li class="impact-item">
+                                    Reduced healthcare costs through early detection
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/DermaBOT" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Powered Eye Disease Diagnosis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/eye.jpg') }}" alt="AI Eye Disease Diagnosis">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/AI-Powered-Eye-Disease-Diagnosis-System-" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">AI-Powered Eye Disease Diagnosis</h2>
+                        <p class="project-description">A diagnostic system that uses convolutional neural networks to detect various eye diseases from retinal images.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-eye"></i>
+                                    Computer Vision
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fab fa-python"></i>
+                                    Keras
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-project-diagram"></i>
+                                    CNN
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Data Augmentation
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Automated detection of diabetic retinopathy and other eye conditions
+                                </li>
+                                <li class="impact-item">
+                                    High accuracy in disease classification
+                                </li>
+                                <li class="impact-item">
+                                    Potential integration with telemedicine platforms
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/AI-Powered-Eye-Disease-Diagnosis-System-" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance Fraud Detection -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/ins.jpg') }}" alt="Insurance Fraud Detection">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/Machine-Learning/blob/main/FrAUD.ipynb" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Insurance Fraud Detection</h2>
+                        <p class="project-description">A predictive analytics system that identifies potentially fraudulent insurance claims using machine learning algorithms.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Fraud Detection
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fab fa-python"></i>
+                                    Scikit-learn
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-chart-pie"></i>
+                                    Feature Engineering
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-balance-scale"></i>
+                                    Anomaly Detection
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Reduced financial losses from fraudulent claims
+                                </li>
+                                <li class="impact-item">
+                                    Improved efficiency in claims processing
+                                </li>
+                                <li class="impact-item">
+                                    Identified patterns in fraudulent behavior
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/Machine-Learning/blob/main/FrAUD.ipynb" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Terrorism Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/terr1.jpg') }}" alt="Global Terrorism Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Global Terrorism Dashboard</h2>
+                        <p class="project-description">An interactive Power BI dashboard analyzing global terrorism trends, patterns, and statistics.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-globe"></i>
+                                    Power BI
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-database"></i>
+                                    Data Modeling
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-chart-line"></i>
+                                    Time Series Analysis
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    Geospatial Visualization
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Visualized complex terrorism data intuitively
+                                </li>
+                                <li class="impact-item">
+                                    Identified regional patterns and trends
+                                </li>
+                                <li class="impact-item">
+                                    Interactive filters for customized analysis
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disney Movies Trend Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/dis1.png') }}" alt="Disney Movies Analysis">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Disney Movies Trend Analysis</h2>
+                        <p class="project-description">A comprehensive analysis of Disney movies over time, examining ratings, genres, and financial performance.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-film"></i>
+                                    Power BI
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    Financial Analysis
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-star"></i>
+                                    Sentiment Analysis
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Time Series
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Revealed trends in Disney's movie production strategy
+                                </li>
+                                <li class="impact-item">
+                                    Correlated financial success with movie characteristics
+                                </li>
+                                <li class="impact-item">
+                                    Interactive visualizations for exploratory analysis
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop Recommendation Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/lap1.jpg') }}" alt="Laptop Recommendation Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Laptop Recommendation Dashboard</h2>
+                        <p class="project-description">An interactive Power BI tool that helps users find the best laptops based on their needs and budget.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-laptop"></i>
+                                    Power BI
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-filter"></i>
+                                    Dynamic Filtering
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-tags"></i>
+                                    Price Analysis
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-microchip"></i>
+                                    Tech Specs Comparison
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Simplified laptop purchasing decisions
+                                </li>
+                                <li class="impact-item">
+                                    Visualized performance vs. price tradeoffs
+                                </li>
+                                <li class="impact-item">
+                                    Customizable recommendations based on user needs
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/PowerBi" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization with Matplotlib/Seaborn -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/DV1.jpg') }}" alt="Data Visualization">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TejasBedarkar/Data-Visualization-" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Data Visualization Projects</h2>
+                        <p class="project-description">A collection of data visualization projects using Python's Matplotlib and Seaborn libraries for effective data storytelling.</p>
+                        
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">
+                                    <i class="fas fa-chart-area"></i>
+                                    Matplotlib
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-chart-bar"></i>
+                                    Seaborn
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-table"></i>
+                                    Pandas
+                                </span>
+                                <span class="tech-tag">
+                                    <i class="fas fa-project-diagram"></i>
+                                    Exploratory Data Analysis
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-impact">
+                            <h4 class="impact-title">Key Impact:</h4>
+                            <ul class="impact-list">
+                                <li class="impact-item">
+                                    Transformed complex datasets into clear visual narratives
+                                </li>
+                                <li class="impact-item">
+                                    Created publication-quality visualizations
+                                </li>
+                                <li class="impact-item">
+                                    Demonstrated best practices in data visualization
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/TejasBedarkar/Data-Visualization-" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>Discuss Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Have a Project in Mind?</h2>
+                <p class="cta-text">Let's discuss how I can help bring your ideas to life.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

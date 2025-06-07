@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforming Data Into <span>Intelligent Solutions</span></h1>
+                <p class="hero-subtitle">Data Analyst & AI Enthusiast | Python, SQL, Power BI | Turning raw data into actionable insights</p>
+                <div class="hero-cta">
+                    <a href="{{ url_for('projects') }}" class="btn btn-primary">
+                        <span>View My Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-links" style="margin-top: 40px;">
+                    <a href="https://linkedin.com/in/tejas-bedarkar" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/TejasBedarkar" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tejas_bedarkar/" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section services-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My <span>Expertise</span></h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Data Analysis</h3>
+                    <p class="service-description">Transforming raw data into meaningful insights using Python, SQL, and statistical techniques to support decision-making.</p>
+                    <a href="{{ url_for('about') }}" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI Solutions</h3>
+                    <p class="service-description">Developing machine learning models and AI applications to solve complex problems and automate processes.</p>
+                    <a href="{{ url_for('about') }}" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="service-title">Data Visualization</h3>
+                    <p class="service-description">Creating interactive dashboards and visual reports in Power BI to communicate data stories effectively.</p>
+                    <a href="{{ url_for('about') }}" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About <span>Me</span></h2>
+                    <p class="about-text">I'm a final year AI & Data Science student passionate about leveraging data to solve real-world problems. With hands-on experience in data analysis, machine learning, and visualization through academic projects and internships, I'm eager to begin my professional journey in the data field.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">7+</h3>
+                            <p class="stat-label">Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">12+</h3>
+                            <p class="stat-label">Skills</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">2</h3>
+                            <p class="stat-label">Certifications</p>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('about') }}" class="btn btn-primary">
+                        <span>My Full Story</span>
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame" style="width: 100%; aspect-ratio: 1/1; overflow: hidden; border-radius: 8px;background-color: white;">
+                        <img src="{{ url_for('static', filename='images/me.png') }}" alt="Tejas Bedarkar" 
+                             style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="section projects-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/eye1.jpg') }}" alt="AI-Powered Eye Disease Diagnosis" style="width: 100%; height: auto; max-width: 100%; display: block;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Eye Disease Diagnosis</h3>
+                        <p class="project-description">Developed a deep learning system that analyzes eye images to detect diseases, improving early diagnosis accuracy.</p>
+                        <div class="project-tech">
+                            <h4 class="tech-title">Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                        </div>
+                        <a href="{{ url_for('projects') }}" class="btn btn-outline">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="{{ url_for('projects') }}" class="btn btn-secondary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Discuss Data Opportunities?</h2>
+                <p class="cta-text">I'm actively seeking roles in data analysis and AI. Let's connect!</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                    <span>Contact Me</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

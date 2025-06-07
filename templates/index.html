@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Big ideas, smart strategies, and endless creativity to supercharge your data</h1>
+                <p class="subtitle">Turning raw data into actionable insights that drive business decisions.</p>
+                <a href="#contact" class="btn-primary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p class="section-subtitle">Data Analyst with a passion for transforming numbers into narratives</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Highly motivated Data Analyst with hands-on experience in data preparation, analysis, and visualization. Strong foundation in SQL, Python, Power BI, and Excel with a passion for turning data into actionable insights.</p>
+                    <div class="personal-info">
+                        <div>
+                            <span>Name:</span>
+                            <p>Tejas Bedarkar</p>
+                        </div>
+                        <div>
+                            <span>Email:</span>
+                            <p>tejasbedarkar@gmail.com</p>
+                        </div>
+                        <div>
+                            <span>Location:</span>
+                            <p>Pune, MH</p>
+                        </div>
+                        <div>
+                            <span>Phone:</span>
+                            <p>+91 8767719407</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/tejas-bedarkar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TejasBedarkar" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Tejas Bedarkar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>B.E. - Artificial Intelligence and Data Science</h3>
+                        <p>D.Y. Patil College of Engineering, Akurdi, Pune</p>
+                        <span>8.21/10</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Science - Higher Secondary School</h3>
+                        <p>Saraswati Bhuvan College Of Science, Aurangabad</p>
+                        <span>88.67/100</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3>Secondary School</h3>
+                        <p>Saraswati Bhuvan High School, Aurangabad</p>
+                        <span>76.80/100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p class="section-subtitle">What I bring to the table</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Python</li>
+                        <li>GenAI(LLM)</li>
+                        <li>SQL</li>
+                        <li>PowerBI</li>
+                        <li>NLP Deep Learning</li>
+                        <li>NLP</li>
+                        <li>Canva</li>
+                        <li>Excel</li>
+                        <li>Data Visualization</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Safety Conscious</li>
+                        <li>Goal Driven</li>
+                        <li>Willingness To Learn</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>ANN With Keras In Python (Udemy)</li>
+                        <li>Machine Learning From Basic To Advance (Udemy)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">Jan 2024 - Mar 2024</div>
+                <div class="experience-content">
+                    <h3>Data Analyst Intern</h3>
+                    <p class="company">Saavi Softwares, Pune, MH</p>
+                    <ul>
+                        <li>Gained hands-on experience in data collection, cleaning, analysis using tools like Excel, SQL, Python.</li>
+                        <li>Created reports and visualizations to support business decisions.</li>
+                        <li>Increased analytical skills, attention to detail, and data communication abilities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p class="section-subtitle">My data-driven creations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=AI+Eye+Disease+Diagnosis" alt="AI-Powered Eye Disease Diagnosis System">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Eye Disease Diagnosis System</h3>
+                        <p>Developed an AI-powered system that analyzes eye images to detect and diagnose various eye diseases using deep learning techniques, improving early detection and accuracy of medical diagnoses.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Computer+Store+Data+Analysis" alt="Computer and Laptop Store Data Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Computer and Laptop Store Data Analysis</h3>
+                        <p>Performed data normalization, cleansing, and built Power BI dashboards showcasing price trends, customizations, and product segmentation. Demonstrated skills in data storytelling and effective visualization.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=DermaBot" alt="DermaBot">
+                    </div>
+                    <div class="project-content">
+                        <h3>DermaBot</h3>
+                        <p>An AI-powered dermatology chatbot utilizing AstraDB, Retrieval-Augmented Generation (RAG), and LLaMA to provide accurate skin-related insights. Integrated with Flask for seamless deployment.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Insurance+Fraud+Detection" alt="Predictive Analytics For Insurance Fraud Detection">
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics For Insurance Fraud Detection</h3>
+                        <p>Developed a predictive analytics system to identify and prevent insurance fraud by leveraging machine learning algorithms to analyze claims data and detect suspicious patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Let's grow your data capabilities together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>tejasbedarkar@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 8767719407</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Pune, Maharashtra, India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Tejas Bedarkar</h2>
+                    <p>Data Analyst | AI Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/tejas-bedarkar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/TejasBedarkar" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tejas Bedarkar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

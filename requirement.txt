@@ -1,0 +1,9 @@
+flask==2.0.1
+HTML
+CSS
+Python
+render_template
+request 
+flash
+redirect 
+url_for

@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+    <!-- Services Hero -->
+    <section class="section services-hero" style="padding: 45px 0 40px;">
+        <div class="container">
+            <div class="services-hero-content text-center">
+                <h1 class="page-title" style="margin-bottom: 20px;">My <span class="highlight">Services</span></h1>
+                <p class="page-subtitle" style="margin-bottom: 2px;">Practical solutions tailored to your digital needs</p>
+                <div class="divider" style="margin: 0 auto; width: 80px; height: 3px; background: var(--primary-color);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="section services-details" style="padding: 40px 0;">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 40px;">
+                <span class="section-subtitle" style="display: block; margin-bottom: 10px;">What I Offer</span>
+                <h2 class="section-title" style="margin-bottom: 15px;">Professional <span class="highlight">Services</span></h2>
+                <div class="section-divider" style="margin: 0 auto; width: 60px; height: 2px; background: var(--primary-color);"></div>
+            </div>
+            
+            <div class="services-detailed-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Web Development Card -->
+                <div class="service-detailed-card" style="padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: left;">
+                    <div class="service-header" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="service-icon-container" style="margin-right: 15px;">
+                            <i class="fas fa-laptop-code service-icon" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="service-title" style="margin: 0; font-size: 1.5rem;">Web Development</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description" style="margin-bottom: 20px; line-height: 1.6;">
+                            Building responsive, user-friendly websites and web applications using modern technologies.
+                        </p>
+                        <div class="service-features">
+                            <h4 class="features-title" style="margin-bottom: 15px; font-size: 1.1rem;">Key Features:</h4>
+                            <ul class="features-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Frontend development with HTML, CSS, JavaScript</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Backend integration with Python/Flask</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Responsive design for all devices</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Processing Card -->
+                <div class="service-detailed-card" style="padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: left;">
+                    <div class="service-header" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="service-icon-container" style="margin-right: 15px;">
+                            <i class="fas fa-database service-icon" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="service-title" style="margin: 0; font-size: 1.5rem;">Data Processing</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description" style="margin-bottom: 20px; line-height: 1.6;">
+                            Efficient data handling, cleaning, and transformation to make your data work for you.
+                        </p>
+                        <div class="service-features">
+                            <h4 class="features-title" style="margin-bottom: 15px; font-size: 1.1rem;">Key Features:</h4>
+                            <ul class="features-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Data cleaning and preprocessing</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Automated data pipelines</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Basic data analysis and visualization</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Process Automation Card -->
+                <div class="service-detailed-card" style="padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: left;">
+                    <div class="service-header" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div class="service-icon-container" style="margin-right: 15px;">
+                            <i class="fas fa-robot service-icon" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="service-title" style="margin: 0; font-size: 1.5rem;">Process Automation</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description" style="margin-bottom: 20px; line-height: 1.6;">
+                            Automating repetitive tasks to save time and reduce errors in your workflows.
+                        </p>
+                        <div class="service-features">
+                            <h4 class="features-title" style="margin-bottom: 15px; font-size: 1.1rem;">Key Features:</h4>
+                            <ul class="features-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Workflow automation scripts</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Web scraping and data extraction</span>
+                                </li>
+                                <li class="feature-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <i class="fas fa-check-circle feature-bullet" style="color: var(--success-color); margin-right: 10px; font-size: 0.9rem;"></i>
+                                    <span class="feature-text">Task scheduling and automation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" style="padding: 40px 0; background-color: rgba(0,0,0,0.02);">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 40px;">
+                <span class="section-subtitle" style="display: block; margin-bottom: 10px;">My Background</span>
+                <h2 class="section-title" style="margin-bottom: 15px;">Internship <span class="highlight">Experience</span></h2>
+                <div class="section-divider" style="margin: 0 auto; width: 60px; height: 2px; background: var(--primary-color);"></div>
+            </div>
+            
+            <div class="experience-card" style="max-width: 800px; margin: 0 auto; padding: 30px; border-radius: 10px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); color: black;">
+                <div class="experience-header" style="display: flex; align-items: center; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                    <div class="company-logo" style="margin-right: 20px;">
+                        <i class="fas fa-building" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                    <div class="company-info">
+                        <h3 class="company-name" style="margin: 0 0 5px 0; font-size: 1.5rem; color: black;">Saavi Softwares</h3>
+                        <p class="internship-period" style="margin: 0; color: var(--text-muted); font-weight: 500;">January 2024 - March 2024</p>
+                    </div>
+                </div>
+                <div class="experience-details" style="color: black;">
+                    <p class="experience-intro" style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6; color: black;">
+                        During my internship at Saavi Softwares, I gained hands-on experience with:
+                    </p>
+                    <ul class="experience-list" style="list-style: none; padding: 0; margin: 0 0 20px 0;">
+                        <li class="experience-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; color: black;">
+                            <div class="experience-bullet" style="margin-right: 12px; margin-top: 4px;">
+                                <i class="fas fa-chevron-right" style="color: var(--primary-color); font-size: 0.8rem;"></i>
+                            </div>
+                            <span style="line-height: 1.5; color: black;">Developing and maintaining web applications using Python and Flask</span>
+                        </li>
+                        <li class="experience-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; color: black;">
+                            <div class="experience-bullet" style="margin-right: 12px; margin-top: 4px;">
+                                <i class="fas fa-chevron-right" style="color: var(--primary-color); font-size: 0.8rem;"></i>
+                            </div>
+                            <span style="line-height: 1.5; color: black;">Working with databases and implementing CRUD operations</span>
+                        </li>
+                        <li class="experience-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; color: black;">
+                            <div class="experience-bullet" style="margin-right: 12px; margin-top: 4px;">
+                                <i class="fas fa-chevron-right" style="color: var(--primary-color); font-size: 0.8rem;"></i>
+                            </div>
+                            <span style="line-height: 1.5; color: black;">Collaborating with a development team using version control (Git)</span>
+                        </li>
+                        <li class="experience-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; color: black;">
+                            <div class="experience-bullet" style="margin-right: 12px; margin-top: 4px;">
+                                <i class="fas fa-chevron-right" style="color: var(--primary-color); font-size: 0.8rem;"></i>
+                            </div>
+                            <span style="line-height: 1.5; color: black;">Debugging and troubleshooting application issues</span>
+                        </li>
+                        <li class="experience-item" style="display: flex; align-items: flex-start; margin-bottom: 12px; color: black;">
+                            <div class="experience-bullet" style="margin-right: 12px; margin-top: 4px;">
+                                <i class="fas fa-chevron-right" style="color: var(--primary-color); font-size: 0.8rem;"></i>
+                            </div>
+                            <span style="line-height: 1.5; color: black;">Participating in code reviews and team meetings</span>
+                        </li>
+                    </ul>
+                    <div class="experience-outro">
+                        <p style="margin: 0; font-style: italic; color: black; line-height: 1.6;">This experience helped me understand real-world software development processes and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section" style="padding: 40px 0;">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 40px;">
+                <span class="section-subtitle" style="display: block; margin-bottom: 10px;">How I Work</span>
+                <h2 class="section-title" style="margin-bottom: 15px;">Development <span class="highlight">Process</span></h2>
+                <div class="section-divider" style="margin: 0 auto; width: 60px; height: 2px; background: var(--primary-color);"></div>
+            </div>
+            
+            <div class="process-steps" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
+                <div class="process-step" style="text-align: center; padding: 20px;">
+                    <div class="step-number-container" style="margin-bottom: 20px;">
+                        <div class="step-number" style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 15px;">1</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon-container" style="margin-bottom: 15px;">
+                            <i class="fas fa-search step-icon" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="step-title" style="margin-bottom: 10px; font-size: 1.3rem;">Requirement Analysis</h3>
+                        <p class="step-description" style="margin: 0; line-height: 1.6; color: var(--text-muted);">
+                            Thorough discussion to understand your specific needs and project goals
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" style="text-align: center; padding: 20px;">
+                    <div class="step-number-container" style="margin-bottom: 20px;">
+                        <div class="step-number" style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 15px;">2</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon-container" style="margin-bottom: 15px;">
+                            <i class="fas fa-pencil-ruler step-icon" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="step-title" style="margin-bottom: 10px; font-size: 1.3rem;">Solution Design</h3>
+                        <p class="step-description" style="margin: 0; line-height: 1.6; color: var(--text-muted);">
+                            Creating a detailed plan and architecture for your project
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" style="text-align: center; padding: 20px;">
+                    <div class="step-number-container" style="margin-bottom: 20px;">
+                        <div class="step-number" style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 15px;">3</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon-container" style="margin-bottom: 15px;">
+                            <i class="fas fa-code step-icon" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="step-title" style="margin-bottom: 10px; font-size: 1.3rem;">Iterative Development</h3>
+                        <p class="step-description" style="margin: 0; line-height: 1.6; color: var(--text-muted);">
+                            Building the solution in phases with regular feedback
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" style="text-align: center; padding: 20px;">
+                    <div class="step-number-container" style="margin-bottom: 20px;">
+                        <div class="step-number" style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 15px;">4</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon-container" style="margin-bottom: 15px;">
+                            <i class="fas fa-rocket step-icon" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 class="step-title" style="margin-bottom: 10px; font-size: 1.3rem;">Testing & Delivery</h3>
+                        <p class="step-description" style="margin: 0; line-height: 1.6; color: var(--text-muted);">
+                            Rigorous testing and final deployment with documentation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="cta-title">Ready to Discuss Your Project?</h2>
+                <p class="cta-text" >
+                    Let's talk about how I can help bring your ideas to life with practical, efficient solutions.
+                </p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right" style="color: black;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
